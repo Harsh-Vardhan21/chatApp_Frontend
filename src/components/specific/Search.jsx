@@ -39,10 +39,15 @@ const Search = () => {
 
   const searchCloseHandler = () => dispatch(setIsSearch(false));
 
+  const currentUser = useSelector((state) => state.currentUser);
+
   useEffect(() => {
     const timeOutId = setTimeout(() => {
       searchUser(search.value)
-        .then(({ data }) => setUsers(data.users))
+        .then(({ data }) => {
+          const filteredUsers = data.users.filter(user => user._id !== currentUser._id);
+          setUsers(filteredUsers);
+        })
         .catch((e) => console.log(e));
     }, 1000);
 

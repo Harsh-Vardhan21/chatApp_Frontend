@@ -115,7 +115,7 @@ export const samepleChats = [
         },
       },
       {
-        name: "L*Da Luston Group",
+        name: "ladko ka Group",
         avatar: ["https://www.w3schools.com/howto/img_avatar.png"],
         _id: "2",
         groupChat: true,
@@ -135,7 +135,7 @@ export const samepleChats = [
     messages: [
       {
         attachments: [],
-        content: "L*uda ka Message hai",
+        content: "Message hai kisi ka",
         _id: "sfnsdjkfsdnfkjsbnd",
         sender: {
           avatar: "https://www.w3schools.com/howto/img_avatar.png",
