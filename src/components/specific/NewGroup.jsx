@@ -14,7 +14,7 @@ import UserItem from "../shared/UserItem";
 import { useDispatch, useSelector } from "react-redux";
 import {
   useAvailableFriendsQuery,
-  useNewGroupMutation, 
+  useNewGroupMutation,
 } from "../../redux/api/api";
 import { useAsyncMutation, useErrors } from "../../hooks/hook";
 import { setIsNewGroup } from "../../redux/reducers/misc";
